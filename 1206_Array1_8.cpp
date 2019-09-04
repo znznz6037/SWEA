@@ -6,23 +6,23 @@ using std::cout;
 using std::endl;
 
 int length;
-int building[1000] = { 0 };
+int box[1000] = { 0 };
 int T = 1;
 int main() {
 	while (T<11) {
-		memset(building, 0, sizeof(building));
+		memset(box, 0, sizeof(box));
 		int count = 0;
 		cin >> length;
 		for (int i = 0; i < length; i++) {
-			cin >> building[i];
+			cin >> box[i];
 		}
 		for (int i = 2; i < length - 2; i++) {
-			if (building[i] == 0) continue;
-			if (building[i - 2] >= building[i] || building[i - 1] >= building[i] || building[i + 1] >= building[i] || building[i + 2] >= building[i]) continue;
+			if (box[i] == 0) continue;
+			if (box[i - 2] >= box[i] || box[i - 1] >= box[i] || box[i + 1] >= box[i] || box[i + 2] >= box[i]) continue;
 			else {
-				while (building[i] >building[i - 2] && building[i] > building[i - 1] && building[i] > building[i + 1] && building[i] > building[i + 2]) {
+				while (box[i] >box[i - 2] && box[i] > box[i - 1] && box[i] > box[i + 1] && box[i] > box[i + 2]) {
 					count++;
-					building[i]--;
+					box[i]--;
 				}
 			}
 
