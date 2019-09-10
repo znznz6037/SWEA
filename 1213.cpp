@@ -1,10 +1,6 @@
 #include <iostream>
 #include <string>
 
-//using std::cin;
-//using std::cout;
-//using std::endl;
-
 using namespace std;
 
 int main() {
@@ -23,6 +19,7 @@ int main() {
 			cnt = 0;
 		}
 		cout << "#" << t << " " << result << endl;
+		result = 0;
 	}
 	return 0;
 }

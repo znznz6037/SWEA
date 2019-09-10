@@ -6,7 +6,7 @@ using std::cout;
 using std::endl;
 
 int ladder[101][101] = { 0 };
-int flag = 0, T = 0, x = 0, y = 0, len = 0, minlen = 10000000, start = 0;
+int flag = 0, T = 0, x = 0, y = 0, len = 0, minlen = 10000000, vertex = 0;
 
 int main() {
 	while (T < 10) {
@@ -82,10 +82,10 @@ int main() {
 			}
 			if (y == 99 && ladder[y][x] == 2 && len != 0 ) {
 				if(minlen > len) minlen = len;
-				start = i;
+				vertex = i;
 			}
 		}
-		cout << "#" << t << " " << start << endl;
+		cout << "#" << t << " " << vertex << endl;
 		T++;
 	}
 	return 0;
