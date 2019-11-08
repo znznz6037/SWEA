@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int graph1[100] = { 0 }, graph2[100] = { 0 }, visit[100] = { 0 }, num = 0, vertex = 0, obj = 0, vnum = 100, result = 0;
+int graph1[100] = { 0 }, graph2[100] = { 0 }, visit[100] = { 0 }, num = 0, vertex = 0, obj = 0, result = 0;
 
 void DFS(int v) {
 	if (v == 99) {
